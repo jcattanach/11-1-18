@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+  <h1>Vacation Locations</h1>
+  <a href="/add-vacation" >Add Vacation info</a>
+  <ul>
+    {{#vacationPostsElement}}
+
+    <li>
+      <label>{{cityName}}</label>
+      <img class='vacationImg'src={{imgURL}}/>
+      <p> {{dateDeparture}} </p>
+      <p> {{dateReturn}} </p>
+    </li>
+
+    {{/vacationPostsElement}}
+  </ul>
+</body>
+</html>
